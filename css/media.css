@@ -139,7 +139,7 @@ i {
                     /* font-size: var(--txt-title) !important; */
                     margin: auto;
                     transition: all 0.3s;
-                    font-size: var(--txt-title1);
+                    font-size: var(--txt-title);
                     /* margin: 0; */
                     /* padding: .8em; */
                     /* margin: 0 10em; */
