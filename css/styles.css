@@ -77,14 +77,20 @@ body {
 
 /*sizes*/
 :root {
-  --txt-title: 3.5rem;
+  --txt-title: 4rem;
   --txt-subtitle: 1.5rem;
   --txt-paragraph: 1.5rem;
   --txt-anchor: .8rem;
   --txt-icon: 2rem;
   --txt-superhero: 5rem;
+  /* responsivo */
+  --txt-title1: 1.7rem;
+  --txt-subtitle1: 1.2rem;
+  --txt-paragraph1: 1rem;
+  --txt-anchor1: .9rem;
+  --txt-icon1: 1.5rem;
+  --txt-superhero1: 2.5rem;
 }
-
 html {
   scroll-behavior: smooth;
   text-align: center;
