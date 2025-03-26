@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="shortcut icon" href="./img/favico.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <title>AlQuimia</title>
+</head>
+
+<body>
+    <header id="home">
+        <div id="menuContainer">
+            <img class="logoMobile" src="./img/logoTopo.png" alt="Logo">
+            <div id="menu">
+                <div id="menuBar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <nav>
+                    <div class="nav" id="nav">
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#sobre">SOBRE</a></li>
+                            <li><a href="#servicos">SERVIÇOS</a></li>
+                            <li><a href="#projetos">PROJETOS</a></li>
+                            <li><a href="#faleConosco">CONTATO</a></li>
+                        </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="menuBg" id="menuBg"></div>
+
+        <nav>
+            <div id="menu2" class="menu">
+                <div class="logo">
+                    <img class="logo" src="./img/logoTopo.png" alt="AlQuimia">
+                </div>
+                <!-- Lista de navegação -->
+                <ul class="navBar">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#servicos">SERVIÇOS</a></li>
+                    <li><a href="#projetos">PROJETOS</a></li>
+                    <li><a href="#faleConosco">CONTATO</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="banner" id="banner">
+            <ul class="bannerTopo">
+                <li>
+                    <h1>Somos Especializados <span>em</span>
+                        <span>Desenvolvimento </span>de Sites
+                    </h1>
+                </li>
+                <li>
+                    <p>Somos especializados no desenvolvimento de sites profissionais e utilizamos as mais modernas
+                        técnicas
+                        para web design existentes na internet.</p>
+                </li>
+                <li>
+                    <img src="./img/desenvolvimento-de-site1_1.png" alt="Banner Site AlQuimia"
+                        class="animate__animated animate__fadeInLeft siteBanner">
+                </li>
+                <li>
+                    <a href="#faleConosco" class="btnDefault">Faça seu orçamento!</a>
+                </li>
+            </ul>
+        </div>
+        <!-- </div> -->
+    </main>
+
+    <section id="sobre">
+        <div class="sobreContainer">
+            <div class="titulo">
+                <h1>Sobre AlQuimia</h1>
+            </div>
+
+            <div class="texto">
+                <p>A AlQuimia, fundada em 2024 em São Paulo, cria experiências digitais memoráveis, unindo design, funcionalidade e inovação. Desenvolvemos soluções personalizadas para conectar marcas e pessoas, sempre com foco em excelência, colaboração e impacto no mercado digital.
+                </p>
+
+            </div>
+
+            <div class="frase">
+                <p>
+                    <span>"A simplicidade é o último grau da sofisticação." – </span>
+                    <span class="colorPink">Leonardo da Vinci</span>
+                </p>
+            </div>
+
+            <div class="quality">
+                <div class="missao-visao">
+                    <button class="missao" data-tab="missao">
+                        <h2>MISSÃO</h2>
+                        <div class="textMissao" id="missao">
+                            <p>Transformar ideias em experiências digitais excepcionais, criando websites inovadores
+                                que conectem marcas e pessoas, impulsionando resultados e proporcionando valor duradouro
+                                para nossos clientes.</p>
+                        </div>
+                    </button>
+
+                    <button class="visao" data-tab="visao">
+                        <h2>VISÃO</h2>
+                        <div class="textVisao" id="visao">
+                            <p>Ser reconhecida como uma referência global em soluções de desenvolvimento de sites,
+                                combinando criatividade, tecnologia e estratégias personalizadas para moldar o futuro
+                                digital de empresas e empreendedores.</p>
+                        </div>
+                    </button>
+                </div>
+                <div class="valores">
+                    <div class="title">
+                        <h2>VALORES</h2>
+                    </div>
+                    <div class="tab-container">
+                        <div class="tab-buttons">
+                            <button class="tab-link active" data-tab="inovacao"><span>INOVAÇÃO</span></button>
+                            <button class="tab-link" data-tab="qualidade"><span>QUALIDADE</span></button>
+                            <button class="tab-link" data-tab="colaboracao"><span>COLABORAÇÃO</span></button>
+                            <button class="tab-link" data-tab="etica"><span>ÉTICA</span></button>
+                            <button class="tab-link" data-tab="satisfacao"><span>SATISFAÇÃO DO
+                                    CLIENTE</span></button>
+                        </div>
+                        <div class="tab-content">
+                            <div id="inovacao" class="tab-pane active">
+                                <p>Estamos sempre em busca de novas soluções e tecnologias para criar sites modernos
+                                    e
+                                    personalizados, que atendam às necessidades únicas de cada cliente. Nossa busca
+                                    pela
+                                    inovação nos permite entregar resultados criativos e de alto impacto.</p>
+                            </div>
+                            <div id="qualidade" class="tab-pane">
+                                <p>Nosso compromisso com a qualidade garante que entregamos sites bem desenvolvidos,
+                                    rápidos e
+                                    funcionais. Cada projeto é realizado com cuidado e atenção aos detalhes, sempre
+                                    superando as
+                                    expectativas dos nossos clientes.</p>
+                            </div>
+                            <div id="colaboracao" class="tab-pane">
+                                <p>Acreditamos na força da colaboração, trabalhando de perto com nossos clientes
+                                    para entender
+                                    suas necessidades e oferecer soluções que atendam aos seus objetivos. A parceria
+                                    constante é
+                                    essencial para alcançar os melhores resultados.</p>
+                            </div>
+                            <div id="etica" class="tab-pane">
+                                <p>Priorizamos a transparência, honestidade e respeito em todos os nossos processos,
+                                    garantindo
+                                    que nossos clientes possam confiar em nossa integridade. Atuamos de forma ética
+                                    em todas as
+                                    fases do projeto.</p>
+                            </div>
+                            <div id="satisfacao" class="tab-pane">
+                                <p>Nosso maior objetivo é garantir a satisfação total dos nossos clientes. Estamos
+                                    comprometidos
+                                    em oferecer soluções que não apenas atendam, mas superem suas expectativas,
+                                    criando relações
+                                    duradouras e de confiança.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="valores2">
+                    <div class="tabs-nav">
+                        <div class="section-title">
+                            <h2>VALORES</h2>
+                        </div>
+                        <button class="tab-item active" data-tab="innovation">
+                            <p>INOVAÇÃO</p>
+                            <div id="innovation" class="tab-content active">
+                                Estamos sempre em busca de novas soluções e tecnologias para criar sites modernos e
+                                personalizados,
+                                que atendam às necessidades únicas de cada cliente. Nossa busca pela inovação nos
+                                permite entregar
+                                resultados criativos e de alto impacto.
+                            </div>
+                        </button>
+                        <button class="tab-item" data-tab="quality">
+                            <p>QUALIDADE</p>
+                            <div id="quality" class="tab-content">
+                                Nosso compromisso com a qualidade garante que entregamos sites bem desenvolvidos,
+                                rápidos e
+                                funcionais. Cada projeto é realizado com cuidado e atenção aos detalhes, sempre
+                                superando as
+                                expectativas dos nossos clientes.
+                            </div>
+                        </button>
+                        <button class="tab-item" data-tab="collaboration">
+                            <p>COLABORAÇÃO</p>
+                            <div id="collaboration" class="tab-content">
+                                Acreditamos na força da colaboração, trabalhando de perto com nossos clientes para
+                                entender suas
+                                necessidades e oferecer soluções que atendam aos seus objetivos. A parceria
+                                constante é essencial
+                                para
+                                alcançar os melhores resultados.
+                            </div>
+                        </button>
+                        <button class="tab-item" data-tab="ethics">
+                            <p>ÉTICA</p>
+                            <div id="ethics" class="tab-content">
+                                Priorizamos a transparência, honestidade e respeito em todos os nossos processos,
+                                garantindo que
+                                nossos
+                                clientes possam confiar em nossa integridade. Atuamos de forma ética em todas as
+                                fases do projeto.
+                            </div>
+                        </button>
+                        <button class="tab-item" data-tab="customer-satisfaction">
+                            <p>SATISFAÇÃO DO CLIENTE</p>
+                            <div id="customer-satisfaction" class="tab-content">
+                                Nosso maior objetivo é garantir a satisfação total dos nossos clientes. Estamos
+                                comprometidos em
+                                oferecer soluções que não apenas atendam, mas superem suas expectativas, criando
+                                relações duradouras
+                                e
+                                de confiança.
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="melado">
+        <div class="melado-black">
+            <div class="text-basic">
+                <h1>Serviços</h1>
+                <br>
+                <h2>Tec<span>nologia</span></h2>
+                <br><br>
+                <p>Nossa cultura é nativo digital! Sempre à frente das inovações, definimos estratégias e
+                    desenvolvemos as melhores soluções para levar a sua empresa além do digital.</p>
+            </div>
+
+            <div class="servicos">
+                <div class="servicos-nav">
+                    <button class="servicos-tab active" data-tab="servico1">
+                        <p>Criação de WordPress</p>
+                        <div id="servico1" class="servicos-item active">
+                            <p>Desenvolvemos sites profissionais e personalizados em WordPress,
+                                garantindo uma estrutura otimizada para SEO, velocidade e responsividade. Nossa
+                                equipe cuida de toda a configuração, segurança e performance para que seu site tenha
+                                uma presença digital forte e eficiente.</p>
+                        </div>
+                    </button>
+                    <button class="servicos-tab" data-tab="servico2">
+                        <p>Desenvolvimento de Site</p>
+                        <div id="servico2" class="servicos-item">
+                            <p>Criamos sites modernos e intuitivos, totalmente responsivos e adaptados às
+                                necessidades do seu negócio. Trabalhamos com as melhores tecnologias para garantir
+                                uma experiência única para seus usuários, seja para um site institucional, blog ou
+                                e-commerce.</p>
+                        </div>
+                    </button>
+                    <button class="servicos-tab" data-tab="servico3">
+                        <p>Desenvolvimento de Landing Page</p>
+                        <div id="servico3" class="servicos-item">
+                            <p>Uma Landing Page bem planejada pode aumentar significativamente suas
+                                conversões. Criamos páginas de alta performance, com design atrativo e copywriting
+                                persuasivo, otimizadas para capturar leads e gerar mais oportunidades para sua
+                                empresa.</p>
+                        </div>
+                    </button>
+                    <button class="servicos-tab" data-tab="servico4">
+                        <p>Desenvolvimento de Sistemas</p>
+                        <div id="servico4" class="servicos-item">
+                            <p>Precisa de um sistema personalizado para gerenciar processos da sua
+                                empresa? Desenvolvemos soluções sob medida para otimizar fluxos de trabalho,
+                                automatizar tarefas e melhorar a produtividade do seu negócio.</p>
+                        </div>
+                    </button>
+                    <button class="servicos-tab" data-tab="servico5">
+                        <p>Criação de Mapas em Games (Modo Criativo)</p>
+                        <div id="servico5" class="servicos-item">
+                            <p>Para os amantes de games, oferecemos a criação demapas
+                                personalizados no modo criativo. Seja para competições, eventos ou
+                                apenas para diversão, projetamos mapas envolventes e interativos que elevam a
+                                experiência do jogador.</p>
+                        </div>
+                    </button>
+                    <button class="servicos-tab" data-tab="servico6">
+                        <p>Desenvolvimento de Mapas no Metaverso (Gather Town)</p>
+                        <div id="servico6" class="servicos-item">
+                            <p>Criamos ambientes interativos e imersivos para eventos, treinamentos e reuniões no
+                                Gather Town. Com design exclusivo, navegação intuitiva e elementos interativos,
+                                garantimos uma experiência envolvente no metaverso. </p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+              
+    </section>
+
+    <section id="projetos">
+        <div class="portfolio">
+            <h1>PORT<span>FÓLIO</span></h1>
+
+            <div id="carousel" class="carousel">
+                <div class="card">
+                    <h3>Patinhas Mágicas</h3>
+                    <p>Patinhas Mágicas é um site desenvolvido para petshop.</p>
+                    <img src="./img/portifólio/patinhas.png" alt="Topo do site ">
+                    <!-- <a href="#">Saiba mais</a> -->
+                </div>
+                <div class="card">
+                    <h3>CineBox</h3>
+                    <p>CineBox é um site desenvolvido para streaming.</p>
+                    <img src="./img/portifólio/cinexbox.png" alt="Topo do site">
+                    <!-- <a href="#">Saiba mais</a> -->
+                </div>
+                <div class="card">
+                    <h3>SM Entertainment</h3>
+                    <p>Site criado para um fã da banda de K-pop.</p>
+                    <img src="./img/portifólio/portGirlsGeneration.png" alt="Topo do site Girls' Generation">
+                    <!-- <a href="#">Saiba mais</a> -->
+                </div>
+                <div class="card">
+                    <h3>Matel</h3>
+                    <p>Site desenvolvido para fans da Barbie.</p>
+                    <img src="./img/portifólio/portBarbie.png" alt="Topo do site">
+                    <!-- <a href="#">Saiba mais</a> -->
+                </div>
+                <div class="card">
+                    <h3>Sanctuary</h3>
+                    <p>Site criado para uma franquia de Doces diferenciados. 
+                    </p>
+                    <img src="./img/portifólio/portSanctuary.png" alt="Topo do site">
+                    <!-- <a href="#">Saiba mais</a> -->
+                </div>
+            </div>
+
+    </section>
+
+    <section id="faleConosco" class="faleConosco">
+
+        <div class="contatoTitle">
+            <h1>Fale <span>Conosco</span></h1>
+
+            <p>Envie sua mensagem, assim que possível entraremos em contato!</p>
+        </div>
+
+        <div class="containerFaleConosco">
+            <form action="" class="formWrapper">
+                <input type="text" placeholder="Nome:" class="frmInput">
+                <input type="email" placeholder="Email:" class="frmInput">
+                <input type="tel" placeholder="Telefone:" class="frmInput">
+                <textarea placeholder="Deixe sua mensagem:" class="frmInput"></textarea>
+                <input type="button" id="btnEnviar" value="Enviar" class="btnEnviar">
+            </form>
+
+            <div class="right">
+                <h6>AlQuimia Tech</h6>
+                <div class="telefones">
+                    <p>(11) 96215-2155</p>
+                    <p>(11) 96545-5481</p>
+                </div>
+
+                <h6>Onde estamos:</h6>
+                <p>Rua Ficticía, 899 - Bairro da Imaginação | CEP:</p>
+                <p>008185-689 - São Paulo/SP</p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235208.22494873722!2d-44.00350990546875!3d-22.908630199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bfa303f687233%3A0x21fb16b7f7897125!2sAlquimia%20Digital!5e0!3m2!1spt-BR!2sbr!4v1742427354252!5m2!1spt-BR!2sbr"
+                    frameborder="0">
+                </iframe>
+            </div>
+            <!-- <div id="ocultar">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VjFTz9wHS9c?si=BFJwPjFfFdIHTjwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VjFTz9wHS9c?si=BFJwPjFfFdIHTjwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VjFTz9wHS9c?si=BFJwPjFfFdIHTjwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VjFTz9wHS9c?si=BFJwPjFfFdIHTjwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VjFTz9wHS9c?si=BFJwPjFfFdIHTjwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VjFTz9wHS9c?si=BFJwPjFfFdIHTjwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VjFTz9wHS9c?si=BFJwPjFfFdIHTjwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VjFTz9wHS9c?si=BFJwPjFfFdIHTjwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VjFTz9wHS9c?si=BFJwPjFfFdIHTjwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div> -->
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+            <ul>
+                <li>
+                    <p>Privacidade</p>
+                </li>
+                <li>
+                    <p>Termos de Uso</p>
+                </li>
+                <li>
+                    <p>Cookies</p>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>Informações</p>
+                </li>
+                <li>
+                    <p>Entre em contato</p>
+                </li>
+                <li>
+                    <p>Central de Ajuda</p>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>Sobre</p>
+                </li>
+                <li>
+                    <p>Parceiros</p>
+                </li>
+                <li>
+                    <p>Serviços</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="line"></div>
+
+        <ul class="footerLogo">
+            <li>
+                <!-- facebook -->
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-facebook-circle" data-url="https://facebook.com" _blank></i>
+                </a>
+                <!-- instagram -->
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-instagram" data-url="https://instagram.com"></i>
+                </a>
+                <!-- github -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-github" data-url="https://github.com"></i>
+                </a>
+                <!-- linkedin -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-linkedin" data-url="https://linkedin.com"></i>
+                </a>
+                <!-- whatsapp -->
+                <a href="https://wa.me/55119123498765?text=Ol%C3%A1%2C%20estou%20interessado%20em%20um%20or%C3%A7amento!"
+                    target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'
+                        data-url="https://wa.me/55119123498765?text=Ol%C3%A1%2C%20estou%20interessado%20em%20um%20or%C3%A7amento!"></i></a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <button id="backToTopButton" class="backToTopButton">
+        <img src="./img/favico.png" alt="Voltar ao Topo" class="backToTopIcon">
+    </button>
+
+
+
+    <script src="./js/meuscript.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+
+</body>
+
+</html>
