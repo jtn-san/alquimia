@@ -2,19 +2,13 @@
 
 /*sizes*/
 :root {
-  --txt-title: 4rem;
-  --txt-subtitle: 1.5rem;
-  --txt-paragraph: 1.5rem;
-  --txt-anchor: .8rem;
-  --txt-icon: 2rem;
-  --txt-superhero: 5rem;
-  /* responsivo */
-  --txt-title1: 1.7rem;
-  --txt-subtitle1: 1.2rem;
-  --txt-paragraph1: 1rem;
-  --txt-anchor1: .9rem;
-  --txt-icon1: 1.5rem;
-  --txt-superhero1: 2.5rem;
+    /* responsivo */
+    --txt-title1: 1.7rem;
+    --txt-subtitle1: 1.2rem;
+    --txt-paragraph1: 1rem;
+    --txt-anchor1: .9rem;
+    --txt-icon1: 1.5rem;
+    --txt-superhero1: 2.5rem;
 }
 
 
@@ -69,11 +63,10 @@ i {
 
 @media screen and (max-width: 1200px) {
     .banner {
-        height: auto;
+        /* height: auto; */
 
         .bannerTopo {
             & li {
-
                 margin: none;
             }
         }
@@ -123,11 +116,11 @@ i {
 
     .banner {
         padding: 20px;
-
+        height: auto;
         .bannerTopo {
             & li {
                 .siteBanner {
-                   /* width: 70vh;*/
+                    width: 100vh;
                 }
 
                 p {
@@ -208,8 +201,6 @@ i {
     }
 
 
-
-
     .banner {
 
         /* padding: 30px; */
@@ -220,6 +211,7 @@ i {
             }
 
             h1 {
+                font-size: var(--txt-title1);
                 transition: all 0.3s;
             }
 
@@ -433,6 +425,7 @@ i {
 
             .text-basic {
                 h1 {
+                    font-size: var(--txt-title);
                     margin: 0;
                 }
             }
@@ -653,7 +646,7 @@ i {
         height: 100vh;
 
         & h1 {
-            /* font-size: var(--txt-title); */
+            font-size: var(--txt-title);
         }
     }
 

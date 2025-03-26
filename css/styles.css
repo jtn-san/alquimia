@@ -77,20 +77,14 @@ body {
 
 /*sizes*/
 :root {
-  --txt-title: 4rem;
+  --txt-title: 3.5rem;
   --txt-subtitle: 1.5rem;
   --txt-paragraph: 1.5rem;
   --txt-anchor: .8rem;
   --txt-icon: 2rem;
   --txt-superhero: 5rem;
-  /* responsivo */
-  --txt-title1: 1.7rem;
-  --txt-subtitle1: 1.2rem;
-  --txt-paragraph1: 1rem;
-  --txt-anchor1: .9rem;
-  --txt-icon1: 1.5rem;
-  --txt-superhero1: 2.5rem;
 }
+
 html {
   scroll-behavior: smooth;
   text-align: center;
@@ -847,7 +841,12 @@ header {
 
   @media (max-width: 1024px) {
     height: auto;
+    .sobreContainer {
 
+      .titulo {
+        font-size: var(--txt-title);
+      }
+  }
   }
 
   @media (max-width: 768px) {
@@ -857,7 +856,6 @@ header {
       margin: none;
 
       .titulo {
-        font-size: 1.3rem;
         padding: 1rem;
       }
 
@@ -988,7 +986,9 @@ header {
     display: block;
 
     .sobreContainer {
-
+      .titulo {
+        font-size: var(--txt-title1) !important;
+      }
 
       .texto {
         font-size: 0.9rem;
@@ -1094,11 +1094,12 @@ header {
 
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     height: auto;
-h1 {
-  font-size: var(--txt-title1);
-}
+
+    h1 {
+      font-size: var(--txt-title1);
+    }
 
     .misao-visao {
       & .sobreContainer {
@@ -1115,6 +1116,28 @@ h1 {
     }
   }
 }
+  @media (max-width: 320px) {
+    height: auto;
+
+    h1 {
+      font-size: var(--txt-title1);
+    }
+
+    .misao-visao {
+      & .sobreContainer {
+        & .quality {
+          & .missao-visao {
+            & button {
+              & p {
+                font-size: 0.8rem !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 
 /*#endregion*/
 
@@ -1185,7 +1208,7 @@ h1 {
       }
     }
   }
-
+}
 }
 
 
