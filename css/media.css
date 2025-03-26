@@ -127,12 +127,12 @@ i {
         .bannerTopo {
             & li {
                 .siteBanner {
-                    width: 70vh;
+                   /* width: 70vh;*/
                 }
 
                 p {
                     transition: all 0.3s;
-                    font-size: var(--txt-paragraph1);
+                    font-size: var(--txt-paragraph);
                 }
 
                 h1 {
