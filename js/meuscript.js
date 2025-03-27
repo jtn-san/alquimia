@@ -32,7 +32,7 @@ navLinks.forEach(link => {
             menuBar.classList.remove("change");  // Fecha o ícone do menu
             nav.classList.remove("change");      // Fecha o menu principal
             menuBg.classList.remove("changeBg"); // Remove o fundo do menu
-        }, 500);  // Delay de 500ms para garantir que a navegação ocorra antes do fechamento - Feito isso, pois estava ocorrendo um bug e não fechava o menu, e, quando fechava, não navegava corretamente até a seção alvo. 
+        }, 50);  // Delay de 500ms para garantir que a navegação ocorra antes do fechamento - Feito isso, pois estava ocorrendo um bug e não fechava o menu, e, quando fechava, não navegava corretamente até a seção alvo. 
     });
 });
 
