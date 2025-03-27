@@ -190,7 +190,49 @@ i {
     }
 }
 
+@media screen and (max-width: 480px) {
+    #preloader {
+        display: none;
+    }
 
+    #menu2 {
+        display: none;
+
+        & img {
+            /* padding-top: -25px; */
+        }
+
+    }
+
+
+    .banner {
+        height: auto !important;
+        padding: 1.5rem;
+
+        .bannerTopo {
+            & li {
+                h1 {
+                    font-size: var(--txt-title1);
+                    padding: .8em;
+                }
+
+                p {
+                    line-height: 1.5;
+                    padding: 0 1rem;
+                }
+
+                .siteBanner {
+                    width: 90%;
+                }
+
+                .btnDefault {
+                    font-size: 1rem;
+                    padding: 0.6rem 1.5rem;
+                }
+            }
+        }
+    }
+}
 
 @media(max-width: 425px) {
     #menu2 {
