@@ -117,6 +117,7 @@ i {
     .banner {
         padding: 20px;
         height: auto;
+
         .bannerTopo {
             & li {
                 .siteBanner {
@@ -228,11 +229,234 @@ i {
 
 /* #endregion */
 
-/* #region Servicos*/
+/* #region sobre  */
+
+/* Para telas até 620px */
+@media(max-width: 620px) {
+    #sobre {
+        .sobreContainer {
+            .titulo {
+                h1 {
+                    font-size: var(--txt-title1) !important;
+                }
+            }
+
+            .texto {
+                p {
+                    /* margin: 1em; */
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+
+            .section-title {
+                .title {
+                    h2 {
+                        font-size: var(--txt-subtitle1);
+                    }
+                }
+            }
+
+            .frase {
+
+                p,
+                span {
+                    /* padding: 1em; */
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+
+            button {
+                h2 {
+                    font-size: var(--txt-subtitle1);
+                }
+
+                p {
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width: 425px) {
+    /* #sobre {
+        .sobreContainer {
+            .titulo {
+                h1 {
+                    font-size: var(--txt-title1) !important;
+                }
+            }
+
+            .texto {
+                p {
+                    margin: 1em;
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+
+            .section-title {
+                .title {
+                    h2 {
+                        font-size: var(--txt-subtitle1);
+                    }
+                }
+            }
+
+            .frase {
+
+                p,
+                span {
+                    padding: 1em;
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+
+            button {
+                h2 {
+                    font-size: var(--txt-subtitle1);
+                }
+
+                p {
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+        }
+    } */
+
+}
+
+/* Para telas até 425px */
+@media (max-width: 425px) {
+    #sobre {
+        .sobreContainer {
+            .titulo {
+                h1 {
+                    font-size: var(--txt-title1) !important;
+                }
+            }
+
+            .texto {
+                p {
+                    /* margin: 1em; */
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+
+            .section-title {
+                .title {
+                    h2 {
+                        font-size: var(--txt-subtitle1);
+                    }
+                }
+            }
+
+            .frase {
+
+                p,
+                span {
+                    /* padding: 1em; */
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+
+            button {
+                h2 {
+                    font-size: var(--txt-subtitle1);
+                }
+
+                p {
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+        }
+    }
+
+}
+
+/* Para telas até 375px */
+@media (max-width: 375px) {
+    #sobre {
+        .sobreContainer {
+            .section-title {
+                .title {
+                    h2 {
+                        font-size: var(--txt-subtitle1);
+                    }
+                }
+            }
+
+            button {
+                h2 {
+                    font-size: var(--txt-subtitle1);
+                }
+
+                p {
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+        }
+    }
+}
+
+/* Para telas até 320px */
+@media (max-width: 320px) {
+    #sobre {
+        .sobreContainer {
+            .section-title {
+                .title {
+                    h2 {
+                        font-size: var(--txt-subtitle1);
+                    }
+                }
+            }
+
+            button {
+                h2 {
+                    font-size: var(--txt-subtitle1);
+                }
+
+                p {
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+        }
+    }
+}
+
+/* Para telas até 300px */
+@media (max-width: 300px) {
+    #sobre {
+        .sobreContainer {
+            .titulo {
+                h1 {
+                    font-size: var(--txt-title1) !important;
+                }
+            }
+        }
+    }
+}
+
+/* Para telas até 250px */
+@media (max-width: 250px) {
+    #sobre {
+        .sobreContainer {
+            .titulo {
+                h1 {
+                    font-size: var(--txt-title1) !important;
+                }
+            }
+        }
+    }
+}
+
+/* #endregion */
+
+/* #region  serviços */
 @media (min-width: 1200px) {
     .melado {
         width: 100%;
-        max-width: 1200px;
+        /* max-width: 1200px; */
         margin: 0 auto;
         text-align: center;
 
@@ -352,7 +576,7 @@ i {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                max-width: 700px;
+                /* max-width: 700px; */
 
                 p {
                     color: var(--clr-pink);
@@ -425,7 +649,6 @@ i {
 
             .text-basic {
                 h1 {
-                    font-size: var(--txt-title);
                     margin: 0;
                 }
             }
@@ -445,6 +668,58 @@ i {
 @media (max-width: 480px) {
     .melado {
         height: auto;
+
+        .melado-black {
+            .text-basic {
+                h1 {
+                    font-size: var(--txt-title1);
+                }
+
+                h2 {
+                    font-size: var(--txt-subtitle1);
+                }
+
+                p {
+                    font-size: var(--txt-paragraph1);
+                }
+            }
+        }
+    }
+
+    .servicos-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .servicos-tab {
+            background: var(--clr-transparent-pink);
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 0.5em;
+
+            p {
+                color: var(--clr-pink);
+                font-size: var(--txt-paragraph1);
+            }
+
+            .servicos-item {
+                display: none;
+
+                p {
+                    color: var(--clr-white);
+                    font-size: var(--txt-paragraph1);
+                }
+
+                &.active {
+                    display: block;
+                }
+            }
+
+            &:hover {
+                background: var(--clr-transparent-pink);
+            }
+        }
     }
 
     .meladoComBorda {
@@ -459,10 +734,11 @@ i {
 }
 
 @media (max-width: 320px) {
+
     h1 {
         font-size: var(--txt-title1);
-      }
-      
+    }
+
     .melado {
         width: 100%;
         max-width: 320px;
@@ -492,6 +768,7 @@ i {
 
                 p {
                     color: var(--clr-pink);
+                    font-size: var(--txt-paragraph1);
                 }
 
                 .servicos-item {
@@ -499,6 +776,7 @@ i {
 
                     p {
                         color: var(--clr-white);
+                        font-size: var(--txt-paragraph1);
                     }
 
                     &.active {
@@ -522,6 +800,7 @@ i {
         }
     }
 }
+
 
 /* #endregion */
 
@@ -698,21 +977,31 @@ i {
 }
 
 @media (max-width: 480px) {
-    .carousel {
-        height: 40vh;
-        margin: 2em;
-        padding: 10px;
-    }
+    .portfolio {
+        h1 {
+            font-size: var(--txt-title1);
+        }
 
-    .card {
-        width: 180px;
-        height: 260px;
-        background: var(--clr-gradient2);
-        border-radius: 10px;
-        opacity: 0.7;
+        .carousel {
+            height: 40vh;
+            margin: 2em;
+            padding: 10px;
 
-        & p {
-            font-size: 1em;
+
+
+            .card {
+                width: 180px;
+                height: 260px;
+                background: var(--clr-gradient2);
+                border-radius: 10px;
+                opacity: 0.7;
+
+                h3 {}
+
+                & p {
+                    font-size: 1em;
+                }
+            }
         }
     }
 
