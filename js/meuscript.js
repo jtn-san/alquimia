@@ -36,6 +36,39 @@ navLinks.forEach(link => {
     });
 });
 
+// Fecha o menu quando a página for rolada
+window.addEventListener("scroll", () => {
+    const menuBar = document.getElementById("menuBar");
+    const nav = document.getElementById("nav");
+    const menuBg = document.getElementById("menuBg");
+
+    if (nav.classList.contains("change")) {
+        menuBar.classList.remove("change");
+        nav.classList.remove("change");
+        menuBg.classList.remove("changeBg");
+        
+        // Aguarda um pequeno tempo para remover o display (evita bugs na reabertura)
+        setTimeout(() => {
+            menuBg.style.display = "none";
+        }, 400);
+    }
+});
+
+// Ajuste na função para abrir e fechar o menu hambúrguer
+function menuOnClick() {
+    const menuBar = document.getElementById("menuBar");
+    const nav = document.getElementById("nav");
+    const menuBg = document.getElementById("menuBg");
+
+    menuBar.classList.toggle("change");
+    nav.classList.toggle("change");
+    menuBg.classList.toggle("changeBg");
+
+    // Se o menu está sendo aberto, mostra o fundo novamente
+    if (menuBg.classList.contains("changeBg")) {
+        menuBg.style.display = "block";
+    }
+}
 
 //portfolio
 const cards = document.querySelectorAll('.card');
