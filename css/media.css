@@ -775,6 +775,58 @@ i {
 
 /*#region portfólio */
 
+@media (min-width: 2000px) {
+    #projetos {
+        h1 {
+            font-size: var(--txt-title);
+            padding-bottom: 1em;
+        }
+
+        .portfolio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            & h1 {
+                /* font-size: var(--txt-title); */
+            }
+        }
+
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Centraliza o conteúdo do carousel */
+            height: 60vh;
+            margin: 3em;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .card {
+            width: 1000px;
+            /* Tamanho maior dos cards em telas maiores */
+            height: 1080px;
+            /* Tamanho maior dos cards */
+            /* background: var(--clr-gradient2); */
+            border-radius: 10px;
+            opacity: 0.3;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card.active {
+            transform: translateX(0) scale(1.3);
+            opacity: 1;
+            z-index: 2;
+            background: var(--clr-gradient2);
+        }
+    }
+
+}
 @media (min-width: 1460px) {
     #projetos {
         h1 {
@@ -805,9 +857,9 @@ i {
         }
 
         .card {
-            width: 520px;
+            width: 500px;
             /* Tamanho maior dos cards em telas maiores */
-            height: 600px;
+            height: 580px;
             /* Tamanho maior dos cards */
             /* background: var(--clr-gradient2); */
             border-radius: 10px;
@@ -847,7 +899,7 @@ i {
 
         .card {
             width: 330px;
-            height: 390px;
+            height: 490px;
             background: var(--clr-gradient2);
             border-radius: 10px;
             margin: 0 10px;
@@ -889,7 +941,7 @@ i {
     }
 }
 
-@media (min-width: 1021px) and (max-width: 1330px) {
+@media (min-width: 1201px) and (max-width: 1330px) {
     #projetos {
         h1 {
             font-size: var(--txt-title);
@@ -908,7 +960,7 @@ i {
 
         .card {
             width: 330px;
-            height: 390px;
+            height: 440px;
             background: var(--clr-gradient2);
             border-radius: 10px;
             margin: 0 10px;
@@ -1034,8 +1086,8 @@ i {
     }
 
     .card {
-        width: 320px;
-        height: 380px;
+        width: 345px;
+        height: 370px;
         border-radius: 10px;
         margin: 0 10px;
     }
@@ -1098,8 +1150,8 @@ i {
     }
 
     .card {
-        width: 280px;
-        height: 390px;
+        width: 300px;
+        height: 440px;
         transform: translateX(0);
         border-radius: 10px;
     }
